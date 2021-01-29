@@ -16,7 +16,7 @@ if(!empty($_REQUEST['name'])){
         $headers .= 'From: '.$from."\r\n".
             'Reply-To: '.$from."\r\n" .
             'X-Mailer: PHP/' . phpversion();
-            $subject='Message From arfra web Contact Form';
+            $subject='Message From Frandeveloper Contact Form';
             $message="Name: ".$name." <br> Teléfono: ".$tel." <br> Email: ".$email." <br> Comentario: ".$comentario;
        if($success = mail($from , $subject, $message, $headers)){
         echo '<div id="hide"class="alert alert-success" role="alert">
